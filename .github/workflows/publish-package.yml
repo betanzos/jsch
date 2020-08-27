@@ -1,0 +1,38 @@
+name: Publish Maven artifact to GitHub
+
+on:
+  push:
+    tags:
+      - '**'
+
+jobs:
+  deploy:
+    name: Maven deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+        with:
+          ref: master
+          fetch-depth: 0
+
+      - name: Check tag commit exists in master
+        uses: betanzos/check-commit-exist@v1
+        with:
+          commit: ${{ github.sha }}
+
+      - name: Move git HEAD to target commit (GITHUB_SHA)
+        run: |
+          git checkout $GITHUB_SHA
+
+      - name: Setup Java 9
+        uses: actions/setup-java@v1.4.2
+        with:
+          java-version: '9.0.7'
+
+      - name: Deploy
+        env:
+          GITHUB_TOKEN: ${{ secrets.DEPLOY_TOKEN }}
+        run: |
+          mvn --version
+          mvn -e -B deploy
