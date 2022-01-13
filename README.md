@@ -1,5 +1,5 @@
 # JSch for JDK 9
-Is an improvement implementation of JSch (http://www.jcraft.com/jsch/, a pure Java implementation of SSH2) with Java Platform Module System support.
+Is an improved implementation of JSch (http://www.jcraft.com/jsch/, a pure Java implementation of SSH2) with support for the Java Platform Module System.
 
 ## Additional features and improvements
 ### ChannelWritableShell

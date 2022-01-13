@@ -9,7 +9,7 @@
     <version>0.1.55-jdk9</version>
 
     <name>JSch for JDK 9</name>
-    <description>JSch for JDK 9 is an improvement implementation of JSch (http://www.jcraft.com/jsch/, a pure Java implementation of SSH2) with Java Platform Module System support.</description>
+    <description>JSch for JDK 9 is an improved implementation of JSch (http://www.jcraft.com/jsch/, a pure Java implementation of SSH2) with support for the Java Platform Module System..</description>
 
     <developers>
         <developer>
