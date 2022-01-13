@@ -1,3 +1,7 @@
+[![Maven](https://img.shields.io/maven-central/v/dev.betanzos/jsch.svg?color=blue)](https://repo1.maven.org/maven2/dev/betanzos/jsch)
+[![javadoc](https://javadoc.io/badge2/dev.betanzos/jsch/javadoc.svg)](https://javadoc.io/doc/dev.betanzos/jsch)
+[![License: Apache 2.0](https://img.shields.io/badge/License-Revised%20BSD-yellow.svg)](http://www.jcraft.com/jsch/LICENSE.txt)
+
 # JSch for JDK 9
 Is an improved implementation of JSch (http://www.jcraft.com/jsch/, a pure Java implementation of SSH2) with support for the Java Platform Module System.
 
